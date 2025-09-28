@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
 import api from "./api";
+import { useEffect, useState } from "react";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
@@ -10,8 +10,8 @@ export default function Blogs() {
     api
       .get("/node/blog?include=field_blog_image")
       .then((res) => {
-        setBlogs(res.data.data || []);
-        setBlogImages(res.data.included || []);
+        setBlogs(res.data.data);
+        setBlogImages(res.data.included);
       })
       .catch((error) => console.error(error));
   }, []);
@@ -21,17 +21,17 @@ export default function Blogs() {
       <h1 id="blogHeading">Blogs</h1>
       <div className="blogsContainer">
         {blogs.map((item) => {
-          const imgId = item.relationships.field_blog_image?.data?.id;
-          const image = blogImages.find((inc) => inc.id === imgId);
+          const imgId = item.relationships.field_blog_image?.data?.id || "";
+          const image =
+            blogImages.find((include) => include.id === imgId) || null;
           const imageUrl = image
             ? `https://portfolio-backend.lndo.site${image.attributes.uri.url}`
             : null;
-          const imageAlt = image?.attributes?.alt;
 
           return (
             <div key={item.id} className="blogCard">
               <h2>{item.attributes.title}</h2>
-              {imageUrl && <img src={imageUrl} alt={imageAlt} />}
+              {imageUrl && <img src={imageUrl} />}
               <p>{item.attributes.field_blog_text}</p>
             </div>
           );

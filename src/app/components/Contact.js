@@ -23,7 +23,7 @@ export default function ContactForm() {
             field_field_name: form.name,
             field_field_email: form.email,
             field_field_message: form.message,
-            status: true,
+            status: false,
           },
         },
       }),
