@@ -20,18 +20,16 @@ a:hover {
 h1 {
   color: #d8b4fe;
   margin-bottom: 0.5rem;
-  
-
 }
 
-#robotIcon{
+#robotIcon {
   width: 60px;
   border: none;
 }
 
 header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: left;
   background-color: #1f1f1f;
   padding: 1rem;
@@ -43,14 +41,14 @@ header {
 header h1 {
   padding: 1rem;
   margin-top: 0rem;
-
 }
 
 h2,
 h3 {
   color: #c99cf9;
   margin-bottom: 0.6rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -172,9 +170,8 @@ nav {
   margin-bottom: 1rem;
 }
 
-
 .aboutContainer div {
-border: none;
+  border: none;
 }
 
 .aboutContainer {
@@ -203,7 +200,6 @@ border: none;
 .aboutContainer p {
   max-width: 600px;
   color: #ebdbfb;
-
 }
 
 .aboutContainer .aboutBody {
@@ -250,7 +246,7 @@ border: none;
   font-weight: bold;
   color: #121212;
   border-radius: 1rem;
- 
+
   transition: background-color 0.3s ease;
 }
 
@@ -261,7 +257,7 @@ border: none;
 .homeContainer p {
   margin-top: 0;
   max-width: 300px;
-  
+
   font-size: 1.5rem;
   color: #e0e0e0;
   margin: 0 auto;
@@ -269,8 +265,8 @@ border: none;
 
 .homeContainer div {
   border: none;
-  width: 600px;
-
+  max-width: 600px;
+  padding: 2rem;
 }
 
 div {
@@ -290,6 +286,7 @@ div {
 #contactForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50%;
   max-width: 500px;
   gap: 1rem;
@@ -301,22 +298,20 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   min-height: 70vh;
   max-width: 700px;
   margin: 0 auto;
 }
 
 #submitButton {
-  padding: 0.8rem;
-  width: 400px;
+  width: auto;
+  padding: 0.8rem 5rem;
   font-size: 1.2rem;
   font-weight: 700;
   border: none;
   background-color: #3ee0c6;
   color: #121212;
   border-radius: 1rem;
-
   margin: 0 auto;
   transition: background-color 0.3s ease;
 }

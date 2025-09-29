@@ -23,10 +23,11 @@ export default function About() {
 
   return (
     <div>
-    <div className="aboutContainer">
-      <h1>{about.title}</h1>
-      {about.imageUrl && <img src={about.imageUrl} />}
-      <div dangerouslySetInnerHTML={{ __html: about.body }} />
-    </div></div>
+      <div className="aboutContainer">
+        <h1>{about.title}</h1>
+        {about.imageUrl && <img src={about.imageUrl} />}
+        <div dangerouslySetInnerHTML={{ __html: about.body }} />
+      </div>
+    </div>
   );
 }
