@@ -172,6 +172,11 @@ nav {
   margin-bottom: 1rem;
 }
 
+
+.aboutContainer div {
+border: none;
+}
+
 .aboutContainer {
   display: flex;
   flex-direction: column;
@@ -196,8 +201,9 @@ nav {
 }
 
 .aboutContainer p {
-  max-width: 700px;
+  max-width: 600px;
   color: #ebdbfb;
+
 }
 
 .aboutContainer .aboutBody {
@@ -238,11 +244,13 @@ nav {
 .homeContainer a {
   display: inline-block;
   background-color: #3ee0c6;
-  margin: 0.5rem 1rem;
   padding: 0.5rem 1rem;
+  width: 140px;
+  margin: 0.2rem;
   font-weight: bold;
   color: #121212;
   border-radius: 1rem;
+ 
   transition: background-color 0.3s ease;
 }
 
