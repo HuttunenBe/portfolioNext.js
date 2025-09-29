@@ -26,12 +26,14 @@ export default function HomePage() {
 
   return (
     <div className="homeContainer">
-      <h1>{home.title}</h1>
-      {home.imageUrl && <img src={home.imageUrl} />}
-      <p>{home.text}</p>
       <div>
-        {home.github && <a href={home.github}>Github</a>}
-        {home.linkedin && <a href={home.linkedin}>Linkedin</a>}
+        <h1 id="homeHeading">{home.title}</h1>
+        {home.imageUrl && <img src={home.imageUrl} />}
+        <p>{home.text}</p>
+        <div>
+          {home.github && <a href={home.github}>Github</a>}
+          {home.linkedin && <a href={home.linkedin}>Linkedin</a>}
+        </div>
       </div>
     </div>
   );

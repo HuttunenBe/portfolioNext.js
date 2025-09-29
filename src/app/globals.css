@@ -20,26 +20,37 @@ a:hover {
 h1 {
   color: #d8b4fe;
   margin-bottom: 0.5rem;
+  
+
+}
+
+#robotIcon{
+  width: 60px;
+  border: none;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: left;
   background-color: #1f1f1f;
   padding: 1rem;
   text-align: center;
   border-bottom: 1px solid #3ee0c6;
+  flex-wrap: wrap;
 }
 
 header h1 {
   padding: 1rem;
   margin-top: 0rem;
+
 }
 
 h2,
 h3 {
   color: #c99cf9;
   margin-bottom: 0.6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -88,7 +99,8 @@ nav {
   color: rgb(225, 245, 251);
   font-size: 3rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
+  margin-top: 2rem;
 }
 
 .blogCard img {
@@ -201,23 +213,22 @@ nav {
   height: 250px;
   border: 2px solid #3ee0c6;
   margin: 1rem 0;
-  border-radius: 50%;
 }
 
-.homeContainer h1 {
+#homeHeading {
   color: #d8b4fe;
   font-size: 3rem;
+  text-align: center;
 }
 
 .homeContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 900px;
   border: 1px solid #3ee0c6;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 5rem;
   background-color: #1f1f1f;
   border-radius: 1rem;
   text-align: center;
@@ -241,8 +252,17 @@ nav {
 
 .homeContainer p {
   margin-top: 0;
+  max-width: 300px;
+  
   font-size: 1.5rem;
   color: #e0e0e0;
+  margin: 0 auto;
+}
+
+.homeContainer div {
+  border: none;
+  width: 600px;
+
 }
 
 div {

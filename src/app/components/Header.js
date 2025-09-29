@@ -6,7 +6,8 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header>
-      <Navbar /> <h1>Portfolio</h1>
+      <Navbar /> 
+      <img src="/robotIcon.svg" alt="robot icon" id="robotIcon" /> <h1>Beniitta Huttunen</h1>
     </header>
   );
 }
