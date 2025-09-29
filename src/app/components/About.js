@@ -22,7 +22,7 @@ export default function About() {
   }, []);
 
   return (
-    <div>
+    <div className="divs">
       <div className="aboutContainer">
         <h1>{about.title}</h1>
         {about.imageUrl && <img src={about.imageUrl} />}

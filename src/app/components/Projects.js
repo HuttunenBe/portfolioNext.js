@@ -17,7 +17,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div>
+    <div className="divs">
       <h1 id="projectHeading">Projects</h1>
       <div className="projectsContainer">
         {projects.map((item) => {

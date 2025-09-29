@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <Navbar /> 
-      <img src="/robotIcon.svg" alt="robot icon" id="robotIcon" /> <h1>Beniitta Huttunen</h1>
+      <h1>Beniitta Huttunen</h1>
     </header>
   );
 }
