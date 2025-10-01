@@ -17,10 +17,9 @@ export default function Blogs() {
   }, []);
 
   return (
-    <div >
-     
+    <div>
       <div className="blogsContainer">
-         <h1 id="blogHeading">Blogs</h1>
+        <h1 id="blogHeading">Blogs</h1>
         {blogs.map((item) => {
           const imgId = item.relationships.field_blog_image?.data?.id || "";
           const image =

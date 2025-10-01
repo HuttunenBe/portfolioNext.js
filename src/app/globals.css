@@ -27,7 +27,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: left;
-  /*background-color: #181818;*/
   padding: 1rem;
   text-align: center;
   border-bottom: 1px solid #00ffa3;
@@ -35,9 +34,8 @@ header {
 }
 
 header h1 {
-margin-right: 1rem;
+  margin-right: 1rem;
   color: white;
-
 }
 
 h2,

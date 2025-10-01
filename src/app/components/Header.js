@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header>
-      <Navbar /> 
+      <Navbar />
       <h1>Beniitta Huttunen</h1>
     </header>
   );
