@@ -6,6 +6,7 @@ export default function HomePage() {
   const [home, setHome] = useState({});
 
   useEffect(() => {
+     // Fetch homepage node and portfolio image
     api.get("/node/homepage?include=field_portfolioimage").then((res) => {
       const node = res.data.data[0] || null;
       const imgId = node?.relationships.field_portfolioimage?.data?.id;

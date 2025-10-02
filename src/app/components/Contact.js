@@ -2,13 +2,14 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "" }); // state for form fields
 
-  const handleChange = (e) =>
+  const handleChange = (e) => // update state when input change
     setForm({ ...form, [e.target.name]: e.target.value });
 
+    // Submit 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default 
 
     await fetch(
       "https://portfolio-backend.lndo.site/jsonapi/node/contact_message",
@@ -32,8 +33,8 @@ export default function ContactForm() {
         }),
       }
     );
-    alert("Thank you for your message!");
-    setForm({ name: "", email: "", message: "" });
+    alert("Thank you for your message!"); // alert message 
+    setForm({ name: "", email: "", message: "" }); // reset form 
   };
 
   return (
